@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蘑菇街-我的买手街</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/reset.css" />
+	<style>
+	</style>
+	<script src="javaScript/swiper.min.js"></script>
+	<script src="javaScript/jquery.min.js"></script>
+	<script src="javaScript/lazyload.min.js"></script>
+	<script src="javaScript/baiduTemplate.js"></script>
+	<script src="javaScript/yibuqingqou.js"></script>
+	<script src="javaScript/shuju.js"></script>
+	
+</head>
+<body>
+	<!--页眉-->
+	<header class="head"></header>
+	<!--搜索框-->
+	<div class="kuang">
+		<div class="search container">
+	    	<div class="search_logo">
+		        <a href="#">
+		            <img src="image/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png" title="蘑菇街首页"/>
+		        </a>
+		    </div>
+		    <div class="search_main">
+	        	<div class="search_main_top">
+		            <div class="search_main_top_left">
+		                <span>搜商品</span>
+		                <ol>
+		                    <li><a href="#">商品</a></li>
+		                    <li><a href="#">店铺</a></li>
+		                </ol>
+		            </div>
+		            <form action="" class="search_form">
+		                <input type="text" placeholder="凉鞋" id="inp" class="inp">
+		                <input type="submit" value="搜 索" id="but" class="but">
+		            </form>
+		            <div class="xialan" id="xialan">
+		            	<ul id="xialan_ul">
+		            	</ul>
+		            </div>
+		        </div>
+		        <div class="search_main_buttom" id="search_main_buttom">
+			        	
+		        </div>
+		    </div>
+		    <div class="search_right">
+		        <img src="image/171130_8gf90d0d5bgc4ag4kk82gi8kc287d_440x180.png" height="180" width="440"/>
+		    </div>
+		</div>
+	</div>
+	<div class="rotation">
+		<!--/*轮播图  导航*/-->
+		<div class="rotation_nav container">
+			<div class="rotation_theme">
+				<a href="#">主题市场</a>
+			</div>
+			<div class="rotation_more">
+				<a href="tuango.html" target="_blank">省钱团购</a>
+				<a href="#" target="_blank">限时快抢</a>
+				<a href="#" target="_blank">品质优选</a>
+			</div>
+		</div>
+		<!--/*轮播图  主*/-->
+		<div class="rotation_mian">
+			<div class="rotation_quan container">
+				<div class="rotation_Introduce">
+					<ul id="shichang"></ul>
+
+					<!--/*展开部分*/-->
+					<div class="rotation_con" id="rotation_con">
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+						<div class="con1"></div>
+					</div>
+				</div>
+				<div class="rotation_image">
+					<a href="#">
+						<img src="image/lbt.png" alt="">
+					</a>
+				</div>
+				<!--用户信息-->
+				<div class="rotation_log">
+					<div class="rotation_log_top">
+						<a href="#" class="touxiang"></a>
+						<div class="mingzi">
+							<span>菇凉好！</span>
+							<i>欢迎来逛蘑菇街~</i>
+						</div>
+						<a href="#" class="huiyuan">
+							<span>会员中心</span>
+						</a>
+					</div>
+					<div class="rotation_log_buttom">
+						<a href="#">
+							<div class="rotation_log_xing">
+								<p class="xing1">春装上新</p>
+								<p class="xing2">精选潮流美衣</p>
+							</div>
+							<div class="rotation_log_img">
+								<img src="image/xing.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<article>
+		<div class="container">
+			<section class="Timer">
+				<div class="Timer_left">
+					<a href="#"></a>
+					<div class="Timer_left_con" id="jsq">
+					</div>
+				</div>
+				<div class="Timer_right">
+					<div class="swiper-container swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide2">
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+							</div>
+							<div class="swiper-slide swiper-slide2">
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+							</div>
+							<div class="swiper-slide swiper-slide2">
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+							</div>
+							<div class="swiper-slide swiper-slide2">
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+							</div>
+							<div class="swiper-slide swiper-slide2">
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+								<div class="swiper-slide_con"></div>
+							</div>
+						</div>
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				<script>
+                    var mySwiper = new Swiper ('.swiper-container2', {
+                        direction: 'horizontal',
+                        loop: true,
+						speed:1000,
+                        autoplay:{
+                            delay: 5000,
+                            stopOnLastSlide: false,
+                            disableOnInteraction: true
+						},
+						
+
+                        // 如果需要前进后退按钮
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        }
+                    })
+				</script>
+			</section>
+			<section class="ad">
+				<a href="#">
+					<img src="image/ab1.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/ab2.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/ab3.png" alt="">
+				</a>
+				<a href="#">
+				<img src="image/ab4.png" alt="">
+				</a>
+			</section>
+			<section class="Women">
+				<div class="Women_nav">
+					<div class="Women_theme"> <span>女装</span></div>
+					<div class="Women_theme-nav" id="Women_theme-nav"></div>
+				</div>
+				<div class="women_con">
+					<div class="women_con_left" id="women_con_left">
+						<a href="#">
+							<img src="image/nvzhung.png"/>
+						</a>
+					</div>
+					<div class="women_con_right">
+						<div class="women_con_right_top">
+							<div class="swiper-container swiper-container1">
+								<div class="swiper-wrapper swiper-wrapper1">
+									<div class="swiper-slide swiper-slide1">
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide1">
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide1">
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+										<div class="women_con_right_top_con"></div>
+									</div>
+									
+								</div>
+							<div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+							<script>
+                                var mySwiper = new Swiper ('.swiper-container1', {
+                                    direction: 'horizontal',
+                                    loop: true,
+                                    speed:1000,
+                                    autoplay:{	
+                                        delay: 4000,
+                                        stopOnLastSlide: false,
+                                        disableOnInteraction: true
+                                    },
+
+                                    // 如果需要前进后退按钮
+                                    navigation: {
+                                        nextEl: '.swiper-button-next',
+                                        prevEl: '.swiper-button-prev'
+                                    }
+                                })
+							</script>
+						</div>
+						<div class="women_con_right_zhong">
+							<a href="#">
+								<img src="image/nvzhuang%201.webp" alt="" >
+							</a>
+							<a href="#">
+								<img src="image/nvzhuang%202.webp" alt="">
+							</a>
+							<a href="#">
+								<img src="image/nvzhuang%203.webp" alt="">
+							</a>
+						</div>
+						<div class="women_con_right_buttom" id="women_con_right_buttom">
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="bags">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>女鞋&包包</span></div>
+					<div class="bags_theme-nav" id="bao1">
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="image/bao.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+										<div class="bags_con_right_left_con"></div>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bags">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>男友&运动</span></div>
+					<div class="bags_theme-nav">
+						<a href="#">潮男T恤</a>|
+						<a href="#">卫衣</a>|
+						<a href="#">潮鞋 </a>|
+						<a href="#">休闲裤 </a>|
+						<a href="#">万能衬衫</a>|
+
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="image/1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con1"></div>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<script>
+
+						</script>
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bags">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>美妆&个护</span></div>
+					<div class="bags_theme-nav">
+						<a href="#">焕新凉鞋</a>|
+						<a href="#">单鞋</a>|
+						<a href="#">拖鞋</a>|
+						<a href="#">运动鞋</a>|
+						<a href="#">休闲鞋</a>|
+						<a href="#">帆布鞋</a>|
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="http://s3.mogucdn.com/mlcdn/c45406/180416_5g2c0f91h56b356e56bk9agehe5gc_230x555.png_750x9999.v1c7E.80.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con2"></div>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<script>
+
+						</script>
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bags">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>内衣&配饰</span></div>
+					<div class="bags_theme-nav">
+						<a href="#">睡衣</a>|
+						<a href="#">短袜</a>|
+						<a href="#">内衣套装</a>|
+						<a href="#">棒球帽</a>|
+						<a href="#">手表</a>|
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="http://s3.mogucdn.com/mlcdn/c45406/180416_6f38d8378772ada23b8ja8e4eg211_230x555.png_750x9999.v1c7E.80.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con3"></div>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<script>
+
+						</script>
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bags">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>家居&电器</span></div>
+					<div class="bags_theme-nav">
+						<a href="#">家纺好货</a>|
+						<a href="#">收纳宝盒</a>|
+						<a href="#">手机壳</a>|
+						<a href="#">美发神器</a>|
+						<a href="#">充电宝</a>|
+						
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="http://s11.mogucdn.com/mlcdn/c45406/180408_4gk0h70jcc3e321b990acdgckf326_230x555.jpg_750x9999.v1c7E.80.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con4"></div>
+									</div>
+									
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+						<script>
+
+						</script>
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bags bao">
+				<div class="bags_nav">
+					<div class="bags_theme"> <span>母婴&食品</span></div>
+					<div class="bags_theme-nav">
+						
+						<a href="#">儿童套装 </a>|
+						<a href="#">妈咪套装</a>|
+						<a href="#">玩具用品</a>|
+						<a href="#">零食大礼包</a>|
+						<a href="#">进口零食</a>|
+						
+					</div>
+				</div>
+				<div class="bags_con">
+					<div class="bags_con_left">
+						<div class="bags_con_left_img">
+							<a href="#">
+								<img src="http://s3.mogucdn.com/mlcdn/c45406/180416_5gif0937bg9dg349ge02hfi3fi1j4_230x555.png_750x9999.v1c7E.80.webp" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="bags_con_right">
+						<div class="bags_con_right_left">
+							<div class="swiper-container swiper-container3">
+								<div class="swiper-wrapper swiper-wrapper3">
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+									</div>
+									<div class="swiper-slide swiper-slide3">
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+										<div class="bags_con_right_left_con bags_con_right_left_con5"></div>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+
+						<div class="bags_con_right_right">
+							<div class="bags_con_right_right_top">
+								<span class="toujian">热销商品推荐</span>
+								<span class="huan">换一批</span>
+							</div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+							<div class="huan_div"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</article>
+	<script>
+        var mySwiper = new Swiper ('.swiper-container3', {
+            direction: 'horizontal',
+            loop: true,
+            speed:1000,
+           	autoplay:{
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true
+            }
+            
+
+        })
+	</script>
+	<article>
+		<div class="container1">
+			<!--猜你喜欢-->
+			<section class="like">
+				<div class="like_theme">
+					<span>猜你喜欢</span>
+				</div>
+				<div class="like_con">
+					<div class="liek_da" id="liek_da"></div>
+					<div class="liek_da" id="liek_da1"></div>
+				</div>
+			</section>
+		</div>
+	</article>
+	<!--底部-->
+	<div class="foot"></div>
+	<!--上栏-->
+	<aside class="aside_top" id="aside_top">
+		<div class="container">
+			<div class="top_wai">
+				<div class="top_logo" title="蘑菇街-我的买手街">
+					<i></i>
+					<span>全部商品分类</span>
+					<em></em>
+					<div class="rotation_Introduce top_ul" >
+						<ul id="shichang1" class="top_con"></ul>
+						<!--/*展开部分*/-->
+						<div class="rotation_con top_xianxi" id="top_xianxi">
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+							<div class="con1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="search_main_top">
+					<div class="search_main_top_left">
+						<span>搜商品</span>
+						<ol>
+							<li><a href="#">商品</a></li>
+							<li><a href="#">店铺</a></li>
+						</ol>
+					</div>
+					<form action="" class="search_form">
+						<input type="text" placeholder="凉鞋"  class="inp" id="inp1">
+						<input type="submit" value="搜 索" class="but but1">
+					</form>
+					<div class="xialan" id="xialan">
+		            	<ul id="xialan_ul1">
+		            	</ul>
+		            </div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<script>
+        var aside_top=document.querySelector('#aside_top');
+
+        window.onscroll=function(){
+            var windowScroll=document.documentElement.scrollTop;
+            if(windowScroll>=800){
+                aside_top.style.display='block';
+			}
+			if(windowScroll<=800){
+                aside_top.style.display='none';
+			}
+		}
+	</script>
+	<!--右栏-->
+	<div class="ce"></div>
+	<script src="javaScript/jishiqi.js"></script>
+	<script src="javaScript/tab.js"></script>
+	<script>
+        $(function(){
+            $('.foot').load('html/footer.html');
+            $('.head').load('html/nva.html');
+            $('.ce').load('html/right.html')
+            
+            window.addEventListener('load',function (){
+            	$("img.lazy").lazyload({effect:"fadeIn",threshold :0,placeholder:"loading.gif"})
+            });
+        })
+	</script>
+	<script type="text/html" id="chuxian">
+			<div class="rotation_con_left">
+				<dl>
+					<dt>
+						<a rel="nofollow" target="_blank"><%=topic1.info.title%></a>
+						<a href="<%=topic1.info.more%>" target="_blank">更多
+							<span class="more"></span>
+						</a>
+					</dt>
+					<dd>
+						<%for(var i=0;i < topic1.list.length;i++){%>
+						<a href="<%=topic1.list[i].link%>" target="_blank" style="color:<%=topic1.list[i].titleColor%>;"><%=topic1.list[i].title%></a>
+						<%}%>
+
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a rel="nofollow" target="_blank"><%=topic2.info.title%></a>
+						<a href="<%=topic2.info.more%>" target="_blank">更多
+							<span class="more"></span>
+						</a>
+					</dt>
+					<dd>
+						<%for(var i=0;i < topic2.list.length;i++){%>
+						<a href="<%=topic2.list[i].link%>" target="_blank" style="color:<%=topic2.list[i].titleColor%>;"><%=topic2.list[i].title%></a>
+						<%}%>
+
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a rel="nofollow" target="_blank"><%=topic3.info.title%></a>
+						<a href="<%=topic3.info.more%>" target="_blank">更多
+							<span class="more"></span>
+						</a>
+					</dt>
+					<dd>
+						<%for(var i=0;i < topic3.list.length;i++){%>
+						<a href="<%=topic3.list[i].link%>" target="_blank" style="color:<%=topic3.list[i].titleColor%>;"><%=topic3.list[i].title%></a>
+						<%}%>
+
+					</dd>
+				</dl>
+			</div>
+			<div class="rotation_con_right">
+				<h2>/ 猜你喜欢 /</h2>
+				<% for(var i = 0;i < guessLike.list.length;i++){ %>
+				<a href="<%=guessLike.list[i].item_url%>" target="_blank">
+					<div>
+						<img src="<%=guessLike.list[i].image%>_100x100.v1cAC.70.webp"/>
+					</div>
+					<div class="rotation_con_right_con"><%=guessLike.list[i].title%></div>
+				</a>
+				<%}%>
+			</div>
+</script>
+
+</body>
+</html>
+		            			

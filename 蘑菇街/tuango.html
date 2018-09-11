@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>团购首页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/right.css">
+    <link rel="stylesheet" href="css/tuango.css">
+    <script src="javaScript/jquery.min.js"></script>
+    <script src="javaScript/baiduTemplate.js"></script>
+    <script src="javaScript/lazyload.min.js"></script>
+    <script src="javaScript/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="tuan_nav">
+        <div class="tuan_nav_w container1">
+            <a href="http://act.mogujie.com/tuancube/index" target="_blank">
+                <img src="http://s11.mogucdn.com/p1/170307/idid_ifrteyrygmztqzrxmuzdambqhayde_304x96.png_400x9999.v1c7E.70.webp" alt="">
+            </a>
+            <div class="tuan_nav_nav" id="tuan_nav_nav">
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="zhu">
+            <div class="zhu_left" id="zhu_left"></div>
+            <div class="zhu_zhong">
+                <div class="zhu_zhong_con">
+                    <div class="zhong_img" id="zhong_img">
+                        <a href="#">
+                            <img src="http://s2.mogucdn.com/mlcdn/c45406/180408_1edaceeic2dka5dgh1l27afe9i1ac_720x360.jpg_800x9999.v1c7E.70.webp" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="http://s2.mogucdn.com/mlcdn/c45406/171120_5jk19k2aik839jb80dck2ig2kfa0e_720x360.jpg_800x9999.v1c7E.70.webp" alt="">
+                        </a>
+                    </div>
+                    <!--<div class="zhong_dian" id="zhong_dian">
+                        <a href="#"></a>
+                        <a href="#" class="bjs"></a>
+                    </div>-->
+                </div>
+                
+            </div>
+            <div class="zhu_right" id="zhu_right"></div>
+        </div>
+        <div class="remeng">
+            <span>热门搜索：</span>
+            <a href="#">大牌美妆，19元就购啦！</a>
+            <a href="#">精致包配，2折起售～</a>
+            <a href="#">甄选爆款</a>
+            <a href="#">更多品牌好货</a>
+        </div>
+        <div class="shangpingtuan">
+            <div class="shangpingtuan_top">
+                <div class="shangpingtuan_top_nav">
+                    <h3 class="shangpingtuan_nav_left">
+                        商品团 <span>每晚10点开抢</span>
+                    </h3>
+                    <div class="shangpingtuan_nav_right">
+                        <span>
+                            <i>默认</i>
+                        </span>
+                        <b></b>
+                        <span>
+                            <i> 最新</i>
+                        </span>
+                        <b></b>
+                        <span>
+                            <i class="xiajiang">销量</i>
+                        </span>
+                        <b></b>
+                        <span>
+                            <i class="xiajiang">价格</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="shangpingtuan_top_biao">
+                    <div class="shangpingtuan_baio" id="shangpingtuan_baio">
+                        <a href="javaScript:;"> <span>精选</span></a>
+                        <a href="javaScript:;"> <span>女装</span></a>
+                        <a href="javaScript:;"> <span>女鞋</span></a>
+                        <a href="javaScript:;"> <span>包包</span></a>
+                        <a href="javaScript:;"> <span>美妆</span></a>
+                        <a href="javaScript:;"> <span>男友</span></a>
+                        <a href="javaScript:;"> <span>内衣</span></a>
+                        <a href="javaScript:;"> <span>生活</span></a>
+                        <a href="javaScript:;"> <span>配饰</span></a>
+                        <i id="bian_left"></i>	
+                    </div>
+                </div>
+            </div>
+            <div class="shangpingtuan_buttom">
+                <div class="shangpingtuan_buttom_wai" id="buttom_wai">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aside_left">
+    	<a href="javaScript:;"><span>精选</span></a>
+    	<a href="javaScript:;"><span>女装</span></a>
+    	<a href="javaScript:;"><span>女鞋</span></a>
+    	<a href="javaScript:;"><span>包包</span></a>
+    	<a href="javaScript:;"><span>美妆</span></a>
+    	<a href="javaScript:;"><span>男友</span></a>
+    	<a href="javaScript:;"><span>内衣</span></a>
+    	<a href="javaScript:;"><span>生活</span></a>
+    	<a href="javaScript:;"><span>配饰</span></a>
+    </div>
+    <div class="foot"></div>
+    <div class="aside"></div>
+    
+    <script type="text/html" id="tuango">
+		<%for(var i=0;i < docs.length;i++){%>
+	
+			<div class="shangpingtuan_buttom_con">
+                <a href="<%= docs[i].link%>"   class="con_img">
+                    <img src="" alt="" data-original="<%= docs[i].img%>" class="lazy">
+                    <img src="<%= docs[i].lefttop_taglist[0]%>" alt="" style="left: 5px;width:55px;height:26px;">
+                </a>
+                <a href="<%=docs[i].link%>" class="con_jiage">
+                    <div class="con_jiage_shu">
+                        <div>
+                            <em>￥</em><%=docs[i].price%>
+                        </div>	
+                        <div class="sheng_qian">
+                        	立省<%=docs[i].savePrice%>
+                        </div>
+                    </div>
+                    <p><%=docs[i].title%></p>
+                </a>
+                <div class="shou">
+                    <p>已售<%=docs[i].sekesVolume%></p>
+                    <p><%=docs[i].leftTime%></p>
+                </div>
+            </div>
+		<%}%>
+
+    </script>
+    <script src="javaScript/tuango.js"></script>
+</body>
+</html>

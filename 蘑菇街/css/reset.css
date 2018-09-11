@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,i,hr,b,em,input,textarea,select,option,header,nav,article,section,aside,footer,mark{margin: 0; padding: 0;}
+html,body{font-family:arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, 宋体, 宋体, Tahoma, Arial, Helvetica, STHeiti;text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;} /*在ie上 a标签包img时，图片会出现边框 */
+input,select,textarea{outline:0;}
+/* 把他的框设为0，只剩一个光标获得焦点的时候会有一个高亮的蓝色边框 */
+textarea{resize:none; overflow: auto;}
+/* 不允许用户改变text的大小 resize  内容超出就设置滚动条不超出就不设置 auto 自动的意思 */
+table{border-collapse: collapse; border-spacing: 0;}
+/* collapse表格中间的框合并变一条 spacing:0小格不分离*/
+th,strong,var,em,i,b,mark{font-weight: normal; font-style: normal;background:none;}
+a{text-decoration: none;color: #333;}
+
+/*==========================Reset_End===========================*/
+
+html,body{
+    color: #333;
+    font-size: 14px;
+}
+.pull_left{
+    float: left !important;
+}
+.pull_right{
+    float: right !important;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.container{
+    width:1190px;
+    margin:0 auto;
+}
+.container1{
+    width:1200px;
+    margin:0 auto;
+}
+
+
+
+

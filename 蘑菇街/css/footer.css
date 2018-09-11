@@ -1,0 +1,107 @@
+footer{
+    /*width: 100%;*/
+    background: #f5f5f5;
+    padding-top: 2px;
+    padding-bottom: 60px;
+    min-width: 1190px;
+}
+.bangzhu{
+    width:100%;
+    height:100px;
+    display: flex;
+    border-bottom: 2px solid #FF5777;
+}
+.bangzhu_con{
+    width:300px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.bangzhu_con a:hover{
+    color: #FF5777;
+}
+.bangzhu_con h4{
+    margin:0 0 10px 25px;
+}
+.bangzhu_con ul{
+    width:234px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #999;
+}
+.bangzhu_con a{
+    color: #999;
+}
+
+.bangzhu_con ul li{
+    width:80px;
+    height:20px;
+    position: relative;
+}
+.bangzhu_con .kewuduan  li{
+    width:62px;
+}
+.bangzhu_con ul li img{
+    position: absolute;
+    top:22px;
+    left: -17px;
+    width:70px;
+    height:70px;
+    display: none;
+}
+.bangzhu_con ul li:hover img{
+    display: block;
+}
+.wangzhan{
+    padding: 10px 0 ;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+}
+.wangzhan a{
+    color: #666;
+}
+.wangzhan a:hover{
+    color: #FF5777
+}
+.wangzhan b{
+    margin: 0 5px;
+}
+.lianxi{
+    height:20px;
+    line-height: 20px;
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+}
+.lianxi ul{
+    display: flex;
+}
+.lianxi ul li{
+    width:80px;
+}
+.lianxi ul li a{
+    color: #666;
+}
+.lianxi ul li a:hover{
+    color: #FF5777;
+}
+.lianxi p{
+    color: #999;
+}
+.banquan{
+    height:27px;
+    margin-bottom: 8px;
+    color: #999;
+    font-size: 12px;
+    line-height: 27px;
+    display: flex;
+}
+.banquan a{
+    color: #999;
+}
+.banquan b{
+    margin: 0 5px;
+    color: #999;
+}

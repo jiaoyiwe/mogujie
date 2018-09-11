@@ -1,0 +1,371 @@
+footer{
+	padding-top: 50px;
+}
+.tuan_nav{
+    width:100%;
+    min-width: 1200px;
+    height:48px;
+    background: #FF0077;
+}
+.tuan_nav_w{
+    display: flex;
+    height:48px;
+}
+.tuan_nav_w > a{
+    display: block;
+    width:260px;
+}
+.tuan_nav_w img{
+    width:152px;
+    height:48px;
+}
+.tuan_nav_nav {
+    font-size: 0;
+}
+.tuan_nav_nav a{
+    display: inline-block;
+    width: 48px;
+    height:48px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height:48px;
+    text-align: center;
+}
+.tuan_nav_nav a:hover{
+    background: #D80065;
+}
+
+/*zhu*/
+
+.zhu{
+    width:100%;
+    height: 360px;
+    display: flex;
+}
+.zhu_left{
+    width:239px;
+    margin-right: 1px;
+    font-size: 0px;
+}
+.zhu_left a{
+    display: inline-block;
+    width:239px;
+    height:119px;
+    position: relative;
+    margin-bottom: 1px;
+}
+.zhu_left img{
+    width:239px;
+    height:119px;
+}
+.zhu_left div{
+    position: absolute;
+    top: 35px;
+    width:200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    left:20px;
+    color: #fff;
+}
+.zhu_left .zhu_leftim_img_con{
+    font-size: 14px;
+    top:65px;
+}
+.zhu_zhong{
+    width:720px;
+    height:360px;
+    overflow: hidden;
+}
+.zhu_zhong_con{
+    position: relative;
+}
+.zhong_img{
+    position: relative;
+}
+.zhong_img a{
+    width:720px;
+    height:360px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.zhong_img a.dong{
+	left: 100px;
+	opacity: 0;
+}
+.zhong_img img{
+    width: 720px;
+    height:360px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.zhong_dian{
+    width:50px;
+    height:20px;
+    position: absolute;
+    bottom:-340px;
+    left:50%;
+    margin-left: -25px;
+    z-index: 10;
+}
+.zhong_dian a{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url("img/xubbitu2.png") -157px -18px no-repeat ;
+    border-radius: 50%;
+}
+.zhong_dian a.bjs{
+    background:url("img/xubbitu2.png") -97px -18px no-repeat ;
+}
+.zhu_right{
+    width:239px;
+    height:360px;
+    margin-left:1px ;
+}
+.zhu_right a{
+    width:239px;
+    height:360px;
+    display: block;
+    position: relative;
+}
+.zhu_right img{
+    width:239px;
+    height:360px;
+}
+.zhu_right div{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+    font-size: 30px;
+    color: #423230;
+}
+.zhu_right .zhu_right_div{
+    font-size: 16px;
+    top:60px;
+    height:30px;
+    line-height: 30px;
+}
+
+.remeng{
+    width:100%;
+    height:38px;
+    padding: 0 10px;
+    margin-top: 10px;
+    line-height: 38px;
+    font-size: 0;
+    box-sizing: border-box;
+    border:1px solid #ccc;
+}
+.remeng span{
+    font-size: 14px;
+    color: #000;
+}
+.remeng a{
+    font-size: 14px;
+    color: #666;
+    padding: 0 14px;
+    border-right:1px solid #ccc;
+}
+.remeng a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+.shangpingtuan_top_nav{
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shangpingtuan_nav_left{
+    height:40px;
+    line-height: 40px;
+    color: #333;
+    font-size: 20px;
+}
+.shangpingtuan_nav_left span{
+    font-size: 14px;
+    color: #999;
+}
+.shangpingtuan_nav_right{
+    font-size: 0;
+    color: #333;
+}
+.shangpingtuan_nav_right span{
+    font-size: 12px;
+    display: inline-block;
+    width:44px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+}
+.shangpingtuan_nav_right span i{
+    display: inline-block;
+    width:24px;
+    height:14px;
+    line-height: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+.shangpingtuan_nav_right b{
+    width:0;
+    display: inline-block;
+    margin: 15px 8px 0;
+    height:10px;
+    border-right:1px solid #e4e4e4;;
+}
+.xiajiang{
+    background: url("img/xuanbitu3.png") -155px -196px no-repeat;
+}
+.xiajiang_honag{
+    background: url("img/xuanbitu3.png") -155px -97px no-repeat;
+}
+.shangsheg_hong{
+    background: url("img/xuanbitu3.png") -155px -47px no-repeat;
+}
+.shangpingtuan_top_biao{
+    width:100%;
+}
+.shangpingtuan_baio{
+    width:100%;
+    background: #F8F8F8;
+    height:44px;
+    display:flex;
+    position: relative;
+}
+.shangpingtuan_baio a{
+    display: inline-block;
+    width:105px;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+}
+.shangpingtuan_baio a span{
+    width:105px;
+    text-align: center;
+    height:14px;
+    line-height: 14px;
+    display: inline-block;
+    border-right: 1px solid #E4E4E4;
+}
+.shangpingtuan_baio i{
+    width:105px;
+    height:7px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background: url("img/diang.png") 50% 50% no-repeat;
+}
+.shangpingtuan_buttom{
+    margin: 15px 0 0 -15px;
+}
+.shangpingtuan_buttom_wai{
+    width:1215px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shangpingtuan_buttom_con{
+    width:226px;
+    height:438px;
+    border:1px solid #ececec;
+    margin: 0 0 15px 15px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.35s;
+}
+.shangpingtuan_buttom_con:hover{
+    box-shadow: 0 0 10px rgba(135, 135, 135, 0.5);
+}
+.con_img{
+    display: inline-block;
+    width:226px;
+    height:338px;
+    position: relative;
+}
+.con_img img{
+    width:226px;
+    height:338px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.con_jiage{
+    display: block;
+    width:206px;
+    height: 54px;
+    padding: 4px 10px 10px 10px;
+}
+.con_jiage_shu{
+    display: flex;
+    justify-content: space-between;
+}
+.con_jiage_shu div{
+    font-size: 28px;
+    color: #f36;
+    line-height: 38px;
+    font-weight: bold;
+}
+.con_jiage_shu .sheng_qian{
+    width:60px;
+    line-height: 14px;
+    height:14px;
+    text-align: center;
+    padding: 2px 0;
+    border: 1px solid #f36;
+    color: #f36;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.con_jiage p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    line-height: 14px;
+    height: 14px;
+    color: #777;
+    padding: 1px 0;
+}
+.shou{
+    display: flex;
+    justify-content: space-between;
+    height: 29px;
+    margin: 0 10px;
+    border-top: 1px dashed #ddd;
+    align-items: center;
+    color: #999;
+    font-size: 12px;
+}
+.aside_left{
+	position: fixed;
+	top:95px;
+	left: 50%;
+    width: 50px;
+    margin-left: -665px;
+    text-align: center;
+    z-index: 100;
+}
+.aside_left	a{
+	display: block;
+	width: 50px;
+	height: 40px;
+	border-top: 1px solid #656565;
+	line-height: 40px;
+	color: #fff;
+	background: #777;
+	font-size: 12px;
+}
+.aside_left	a:first-child{
+	border-top: none;
+}
+.aside_left	a:hover{
+	background: #FF5777;
+}

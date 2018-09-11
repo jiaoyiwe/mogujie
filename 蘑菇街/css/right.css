@@ -1,0 +1,83 @@
+.aside_right{
+    width:30px;
+    height:100%;
+    background:#000;
+    position: fixed;
+    top:0;
+    right: 0;
+    padding-top: 50px;
+    font-size: 12px;
+}
+.guiwuche,.youhuiquan,.qianbao,.zhuji{
+    width:22px;
+    height:88px;
+    padding: 3px 4px;
+    text-align: center;
+}
+.qianbao,.zhuji{
+    height:77px;
+}
+.aside_right > div:hover{
+    background: red;
+}
+.aside_right > div:hover div{
+    border-bottom: 1px solid red;
+}
+.guiwuche div,.youhuiquan div,.qianbao div,.zhuji div{
+    padding-bottom: 16px;
+    line-height: 15px;
+    border-bottom: 1px solid #919191;
+}
+.qianbao div,.zhuji div{
+    padding-bottom: 20px;
+}
+.aside_right a{
+    color: #fff;
+}
+.guiwuche i{
+    display: block;
+    width:30px;
+    height:30px;
+    background: url("img/xunbitu.png") -272px -132px no-repeat;
+}
+.youhuiquan i{
+    display: block;
+    width:30px;
+    height:30px;
+    background: url("img/xunbitu.png") -272px -162px no-repeat;
+}
+.qianbao i{
+    display: block;
+    width:30px;
+    height:30px;
+    background: url("img/xunbitu.png") -272px -223px no-repeat;
+}
+.zhuji i{
+    display: block;
+    width:30px;
+    height:30px;
+    background: url("img/xunbitu.png") -272px -190px no-repeat;
+}
+.huitop{
+    position: fixed;
+    right:0;
+    bottom:0;
+    width:30px;
+    height:30px;
+    background: #000000;
+}
+.huitop a{
+    display: block;
+    margin: 0 4px;
+    width:22px;
+    border-bottom: 1px solid #919191;
+}
+.huitop:hover a{
+    border-top: 1px solid  red;
+}
+.huitop i{
+    display: block;
+    width:30px;
+    height:30px;
+    background: url("img/xunbitu.png") -270px -280px no-repeat;
+}

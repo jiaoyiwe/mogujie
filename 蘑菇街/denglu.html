@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录_美丽联合</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <script src="javaScript/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div class="quanbu">
+        <header>
+            <div class="nav">
+                <a href="//www.mogujie.com" target="_blank" title="蘑菇街"></a>
+                <span class="gaozhi">
+                依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!
+                 </span>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main_left">
+                <a href="?ptp=1.4baWb.0.0.zbBtdXG" target="_blank"></a>
+            </div>
+            <div class="main_right">
+                <div class="sj_denglu" id="sj_denglu">
+                    <div class="diannao" id="diannao"></div>
+                    <div class="shao"></div>
+                    <div class="ma">
+                        <img src="image/app.png" alt="">
+                    </div>
+                    <a href="xiazai.html" target="_blank" class="dian">点击下载蘑菇街APP</a>
+                </div>
+                <div class="denglu_sj" id="denglu_sj">
+                    <div class="denglu_sj_top">
+                        <div class="pudong_wai tab" >
+                            <a class="pudong " id="pudong">普通登录</a>
+                        </div>
+                        <div class="wumima_wai tab">
+                            <a class="wumima" id="wumima">手机无密码登录</a>
+                        </div>
+                        <div class="denglu_fanshi" id="denglu_fanshi"></div>
+                    </div>
+                    <div class="denglu_sj_con">
+                        <p class="tishi" id="tishi" >请输入用户名/邮箱/手机号</p>
+                        <form method="get" action="http://127.0.0.1:8020/%E6%9C%AA%E5%AE%8C%E6%88%90/%E8%98%91%E8%8F%87%E8%A1%97/demo.html?__hbt=1526346709689">
+                            <div>	
+                                <div class="zhngchang dl" id="zhngchang">
+                                    <div class="yonghuming">
+                                        <input type="text" class="ming inp" placeholder="用户名/邮箱/手机号" id="text">
+                                    </div>
+                                    <div class="minma">
+                                        <input type="password" class="min inp" placeholder="密码" id="password">
+                                    </div>
+                                </div>
+                                <div class="shouji_dl dl" id="shouji_dl">
+                                    <div class="shouji_dl_haoma">
+                                        <input type="text" class="haoma inp" placeholder="手机号码" id="sj_hao">
+                                    </div>
+                                    <div class="dongtaima">
+                                        <a href="#" class="duanxin">获取动态密码</a>
+                                        <input type="text" placeholder="动态密码" class="dongtaimima inp" id="dongtai">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="denglujian">
+                                <input type="submit" value="登录" class="denglu">
+                            </div>
+                            <div class="qitadenglu">
+                                <div class="qitadenglu_con">
+                                    <a href="">
+                                        <img src="image/qq.png" alt="">qq登录
+                                    </a>
+                                    <a href="">
+                                        <img src="image/weixin.png" alt="">微信登录
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="wangjimima">
+                                <a href="#">忘记密码</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foot"></footer>
+    </div>
+    <script src="javaScript/denglu.js"></script>
+    <script>
+    	$(function(){
+    		var boo=false;
+		    $('form').submit(function(){
+		    	var regtext=/^1[34578][0-9][0-9]{1,8}$/;
+		    	var regpassword=/^[0-9a-zA-Z]{6,16}$/;
+		    	var grtkg=/^\s{0,}$/
+		   
+		    	if(grtkg.test($('#text').val())){
+		    		
+		    		boo=true;
+		    	}else{
+		    		if(regtext.test($('#text').val())){
+		    			
+		        		$('#tishi').html('输入密码').css('display','block');
+		        		if(grtkg.test($('#password').val())){
+				    		
+				    		boo=true;
+				    		
+				    	}else{
+				    		if(regpassword.test($('#password').val())){
+				    			
+				        		boo=false;
+
+				    	    }else{
+				        		$('#tishi').html('密码错误').css('display','block')
+				        		boo=true;
+				    	    }
+				    	}
+		    	    }else{
+		        		$('#tishi').html('账号错误').css('display','block')
+		        		boo=true;
+		    	    }
+		    	}
+		    	var boo1=boo
+		    	
+		    	
+		    	
+		    	var sj_hao=/^1[34578][0-9][0-9]{1,8}$/;
+		    	var dongtai=/^[0-9a-zA-Z]{6,6}$/;
+		    	
+		    	
+		    	if(grtkg.test($('#sj_hao').val())){
+		    		
+		    		boo=true;
+		    		
+		    	}else{
+		    	
+		    		if(sj_hao.test($('#sj_hao').val())){
+		        		
+
+		        		$('#tishi').html('输入动态密码').css('display','block');
+		        		if(grtkg.test($('#dongtai').val())){
+				    		
+				    		boo=true;
+				    	}else{
+				    		if(dongtai.test($('#dongtai').val())){
+				        	console.log(boo)
+				        		boo=false;
+				    	    }else{
+				        		$('#tishi').html('动态密码错误').css('display','block')
+				        		boo=true;
+				    	    }
+				    	}
+		        		
+		    	    }else{
+		        		$('#tishi').html('账号错误').css('display','block')
+		        		boo=true;
+		    	    }
+		    	    	
+		    	}
+		   		console.log(boo);
+		   		console.log(boo1);
+		    	if(boo1&&boo){
+		    		return false;
+		    	}
+		    	
+		    	
+		    })	
+  
+    	})
+    </script>
+</body>
+</html>

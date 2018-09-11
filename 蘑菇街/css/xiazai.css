@@ -1,0 +1,88 @@
+footer{
+    padding-top: 50px;
+    background: #FFFFFF;
+}
+.kuang{
+    border-bottom: 2px solid #FF4466;
+}
+.yitu{
+    width:100%;
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.shanglan{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:0px;
+    background: url("img/xianzai_top1.png")  0 0 repeat-x;
+    overflow: hidden;
+}
+.shanglan_w{
+    width:960px;
+    margin: 0 auto;
+    height:103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shanglan_img{
+    width:214px;
+    height:52px;
+    background: url("img/xianzai_top_214x52.png") 0 0 no-repeat;
+}
+.shanglan_img2{
+    width:84px;
+    height:96px;
+    background: url("img/xiazai_top_84x96.jpg") 0 0 no-repeat;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+.img1_w{
+    height:667px;
+}
+.img1_w a{
+    display: block;
+    width:170px;
+    height:50px;
+    position: absolute;
+    right:87px;
+    bottom: 105px;
+}
+.img2_w{
+    height:819px;
+}
+.img3_w{
+    height:706px;
+}
+.img4_w{
+    height:654px;
+}
+.img5_w{
+    height:718px;
+}
+.img6_w{
+    height:688px;
+}
+.shaoma{
+    width:100%;
+    height:180px;
+    background: #FB6FA1;
+}
+.shaoma_con{
+    width:960px;
+    height:180px;
+    margin: 0 auto ;
+}
+.shaoma_con img{
+    margin: 40px 0 0 110px;
+}
